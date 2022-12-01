@@ -1,3 +1,9 @@
+/* start variables */
+:root {
+    --main-color: #19c8fa;
+}
+/* end variables */
+
 /* start Global rules */
 * {
     -webkit-box-sizing: border-box;
@@ -11,6 +17,7 @@ html {
 }
 body {
     font-family: 'Open Sans', sans-serif;
+    background-color: black;
 }
 ul {
     list-style: none;
@@ -66,16 +73,46 @@ header .container::after {
     left: 15px;
 }
 header .logo img {
-    height: 50px;
+    height: 35px;
 
 }
 header nav {
     flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
     
 }
-header .nav ul li{
-    display: inline-flex;
+header nav ul {
+    display: flex;
+}
+header nav ul li a{
+    display: block;
+    padding: 40px 10px;
+    color: white;
     text-decoration: none;
-    
+    font-size: 14px;
+    transition: 0.3s;
+    position: relative;
+    z-index: 2;
+}
+header nav ul li a.active, 
+header nav ul li a:hover {  
+    color: var(--main-color);
+    border-bottom: 1px solid var(--main-color);
+}
+header nav .form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 30px;
+    margin-left: 50px;
+    border-left: 1px solid white;
+}
+header nav .form i {
+    color: white;
+    right: 0;
+    font-size: 15px;
 }
 /* end header  */
