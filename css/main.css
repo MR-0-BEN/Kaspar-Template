@@ -1,6 +1,7 @@
 /* start variables */
 :root {
     --main-color: #19c8fa;
+    --transparent-color: rgb(15 115 143 / 60%);
 }
 /* end variables */
 
@@ -17,7 +18,7 @@ html {
 }
 body {
     font-family: 'Open Sans', sans-serif;
-    background-color: black;
+    /* background-color: black; */
 }
 ul {
     list-style: none;
@@ -147,3 +148,47 @@ header nav .form i {
     font-size: 15px;
 }
 /* end header  */
+/* start landing */
+.landing {
+    height: 100vh;
+    background-color: #1f2021;
+    background-image: url("../images/landing.jpg");
+    background-size: cover;
+    position: relative;
+}
+.landing .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 /60%)
+}
+.landing .overlay .text {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50%;
+    color: white;
+    background-color: var(--transparent-color);
+    padding: 50px;
+    display: flex;
+    justify-content: flex-end;
+}
+.landing .overlay .text .content {
+    max-width: 500px;
+    
+}
+.landing .overlay .text .content h2 {
+    font-size: 23px;
+    font-weight: normal;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-transform: uppercase ;
+}
+.landing .overlay .text .content p {
+    font-size: 15px;
+    line-height: 1.7;
+}
+/* end landing */
