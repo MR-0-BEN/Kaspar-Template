@@ -176,9 +176,19 @@ header nav .form i {
     display: flex;
     justify-content: flex-end;
 }
+@media (max-width: 767px) {
+    .landing .overlay .text {
+        width: 100%;
+    }
+}
 .landing .overlay .text .content {
     max-width: 500px;
     
+}
+@media (max-width: 767px) {
+    .landing .overlay .text .content {
+        max-width: 100%;
+    }
 }
 .landing .overlay .text .content h2 {
     font-size: 23px;
@@ -190,5 +200,41 @@ header nav .form i {
 .landing .overlay .text .content p {
     font-size: 15px;
     line-height: 1.7;
+}
+.landing .overlay .change-background {
+    color: #ddd;
+     position: absolute;
+     top: 50%;
+     transform: translateY(-50%);
+}
+@media (max-width: 767px) {
+    .landing .overlay .change-background {
+        display: none;
+    }
+}
+.landing .overlay .i-left {
+    left: 50px;
+}
+.landing .overlay .i-right {
+    right: 50px;
+}
+.landing .overlay .bullets {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 30px;   
+    display: flex;
+    width: 55px;
+    justify-content: space-between;
+}
+.landing .overlay .bullets li {
+    width: 15px;
+    height: 15px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+.landing .overlay .bullets .active {
+    background-color: var(--main-color);
+    border-color: var(--main-color);
 }
 /* end landing */
