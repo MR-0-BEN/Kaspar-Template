@@ -509,6 +509,7 @@ header nav .form i {
     font-weight: normal;
     color: white;
     border: none;
+    cursor: pointer;
     
 }
 /* end video  */
