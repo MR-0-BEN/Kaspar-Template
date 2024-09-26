@@ -47,7 +47,7 @@ Kasper Template is a modern and responsive one-page web template designed for sh
 - **Footer**: Copyright information and social media links. ©️
 
 ## 🔗 Preview
-View a live demo of the template here: [Kasper Template Preview](https://mr-0-ben.github.io/Kaspar-Template/).
+View a live demo of the template here: [Kasper Template Preview](https://mr-0-ben.github.io/Kasper-Template/).
 
 ## 📜 Source
 The template is sourced from [Graphberry](https://www.graphberry.com/item/kasper-one-page-psd-template).
